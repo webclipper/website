@@ -1,1 +1,15 @@
 @import '~bootstrap/scss/bootstrap.scss';
+
+.brands {
+  text-align: center;
+  padding: 90px 0 20px;
+  background: #fafbfc;
+  .brand-icons {
+    font-size: 32px;
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
