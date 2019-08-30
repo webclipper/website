@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../components/Footer';
 
 const Home = () => {
   return (
@@ -346,90 +347,8 @@ const Home = () => {
             </div>
           </div>
         </section>
-        {/* Testimonial Area */}
-        <section className="testimonial-section">
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-lg-8">
-                <div className="section-title">
-                  <h2>30,000+ Customers Trust Us</h2>
-                  <p>
-                    We designed and tested prototypes that helped identify pain points in the
-                    account creation process. Together, we shaped the new standard.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="testimonial-slider-wrapper">
-              <div className="row justify-content-center position-relative">
-                <div className="col-lg-10 ">
-                  <div className="testimonial-slider">
-                    <div className="single-slide">
-                      <div className="testimonial-content">
-                        <p>
-                          “It’s really helped us grow. I can keep all of the customer’s information
-                          in there so if I need to look up something in the future or call them for
-                          a follow-up, I have all of that there so it’s really helped us organize
-                          the whole business.”
-                        </p>
-                        <div className="t-small-card">
-                          <div className="image">
-                            <img src="/static/image/t6-nav-1.png" alt="" />
-                          </div>
-                          <div className="content">
-                            <h5>Gilbert Palmer</h5>
-                            <span>Founder of Crips</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="single-slide">
-                      <div className="testimonial-content">
-                        <p>
-                          “It’s really helped us grow. I can keep all of the customer’s information
-                          in there so if I need to look up something in the future or call them for
-                          a follow-up, I have all of that there so it’s really helped us organize
-                          the whole business.”
-                        </p>
-                        <div className="t-small-card">
-                          <div className="image">
-                            <img src="/static/image/t6-nav-2.png" alt="" />
-                          </div>
-                          <div className="content">
-                            <h5>Lucy Rios</h5>
-                            <span>Design Director at Craze</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="single-slide">
-                      <div className="testimonial-content">
-                        <p>
-                          “It’s really helped us grow. I can keep all of the customer’s information
-                          in there so if I need to look up something in the future or call them for
-                          a follow-up, I have all of that there so it’s really helped us organize
-                          the whole business.”
-                        </p>
-                        <div className="t-small-card">
-                          <div className="image">
-                            <img src="/static/image/t3-nav-1.png" alt="" />
-                          </div>
-                          <div className="content">
-                            <h5>Sallie Lawson</h5>
-                            <span>Owner of Crips</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="slider-btns" />
-              </div>
-            </div>
-          </div>
-        </section>
         {/* Cta Section */}
-        <section className="cta-section">
+        <section className="cta-section" style={{ marginTop: 100 }}>
           <div className="container">
             <div className="cta-inner-wrapper">
               <div className="row justify-content-center">
@@ -453,69 +372,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className="footer-section">
-          <div className="container">
-            <div className="row align-items-center text-center">
-              <div className="col-lg-2 col-md-3 ">
-                <div className="footer-logo">
-                  <img src="/static/image/footer-logo.png" alt="" />
-                </div>
-              </div>
-              <div className="col-lg-6 col-md-6  offset-lg-1">
-                <ul className="nav footer-nav">
-                  <li className="nav-item">
-                    <a className="nav-link active" href="#">
-                      About{' '}
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">
-                      Features
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">
-                      {' '}
-                      Works
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">
-                      Career
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">
-                      Contact
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-lg-2 col-md-3 offset-lg-1">
-                <ul className="footer-social-list">
-                  <li>
-                    <a href="#">
-                      <i className="icon icon-logo-fb-simple" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="icon icon-logo-twitter" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="icon icon-google" />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="copyright">
-              <p>©2019 All right reserved. </p>
-            </div>
-          </div>
-        </section>
+        <Footer></Footer>
       </div>
     </React.Fragment>
   );
