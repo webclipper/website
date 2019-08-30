@@ -9,7 +9,7 @@ const Home = () => {
             <div className="row justify-content-center align-items-center position-relative">
               <div className="col-sm-4 col-6 col-lg-2 col-xl-2 order-lg-1">
                 <div className="brand">
-                  <a href>
+                  <a href="#">
                     <img src="/static/image/main-logo.png" alt="" />
                   </a>
                 </div>
@@ -494,17 +494,17 @@ const Home = () => {
               <div className="col-lg-2 col-md-3 offset-lg-1">
                 <ul className="footer-social-list">
                   <li>
-                    <a href>
+                    <a href="#">
                       <i className="icon icon-logo-fb-simple" />
                     </a>
                   </li>
                   <li>
-                    <a href>
+                    <a href="#">
                       <i className="icon icon-logo-twitter" />
                     </a>
                   </li>
                   <li>
-                    <a href>
+                    <a href="#">
                       <i className="icon icon-google" />
                     </a>
                   </li>
