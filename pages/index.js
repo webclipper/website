@@ -149,7 +149,7 @@ const Home = () => {
             <div className="row">
               <div className="col-lg-5  col-md-6 col-sm-8">
                 <div className="content-image">
-                  <img src="./image/content-image-1.png" alt="" />
+                  <img src="/static/image/content-image-1.png" alt="" />
                 </div>
               </div>
               <div className="col-lg-6 offset-lg-1 col-md-6">
@@ -170,7 +170,7 @@ const Home = () => {
             <div className="row ">
               <div className="col-xl-6 col-sm-10 col-md-6 col-10 order-md-2 offset-xl-1 d-none d-md-block">
                 <div className="content-image">
-                  <img src="./image/content-image-2.png" alt="" />
+                  <img src="/static/image/content-image-2.png" alt="" />
                 </div>
               </div>
               <div className="col-xl-5 col-sm-12 col-md-6 order-md-1">
@@ -205,7 +205,7 @@ const Home = () => {
             <div className="row">
               <div className="col-xl-5 col-sm-6 col-md-6 col-10 d-none d-md-block">
                 <div className="content-img">
-                  <img src="./image/content-image-3.png" alt="" />
+                  <img src="/static/image/content-image-3.png" alt="" />
                 </div>
               </div>
               <div className="col-xl-6 col-md-6 offset-xl-1 col-sm-12">
@@ -374,7 +374,7 @@ const Home = () => {
                         </p>
                         <div className="t-small-card">
                           <div className="image">
-                            <img src="./image/t6-nav-1.png" alt="" />
+                            <img src="/static/image/t6-nav-1.png" alt="" />
                           </div>
                           <div className="content">
                             <h5>Gilbert Palmer</h5>
@@ -393,7 +393,7 @@ const Home = () => {
                         </p>
                         <div className="t-small-card">
                           <div className="image">
-                            <img src="./image/t6-nav-2.png" alt="" />
+                            <img src="/static/image/t6-nav-2.png" alt="" />
                           </div>
                           <div className="content">
                             <h5>Lucy Rios</h5>
@@ -412,7 +412,7 @@ const Home = () => {
                         </p>
                         <div className="t-small-card">
                           <div className="image">
-                            <img src="./image/t3-nav-1.png" alt="" />
+                            <img src="/static/image/t3-nav-1.png" alt="" />
                           </div>
                           <div className="content">
                             <h5>Sallie Lawson</h5>
