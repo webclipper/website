@@ -1,4 +1,7 @@
 import React from 'react';
+import Icon from '../icon';
+
+const supportPlatform = ['OneNote', 'notion', 'yuque', 'github', 'youdao'];
 
 export default () => (
   <div className="hero-area pt-4 pt-lg-5">
@@ -12,22 +15,18 @@ export default () => (
           <div className="hero-content-wrapper">
             <div className="main-content">
               <p>
-                Web Clipper is an open source extension. You can save anything on the web to
-                anywhere.
+                Web Clipper is an open source extension. You can use it to save anything on the web
+                to anywhere.
               </p>
             </div>
             <div className="compatible">
-              <span>Compitable with:</span>
-              <ul className="compatible-list">
-                <li className="list-item">
-                  <img src="/static/image/compatible-1.png" alt="" />
-                </li>
-                <li className="list-item">
-                  <img src="/static/image/compatible-2.png" alt="" />
-                </li>
-                <li className="list-item">
-                  <img src="/static/image/compatible-3.png" alt="" />
-                </li>
+              <span>Support :</span>
+              <ul className="compatible-list" style={{ fontSize: 32 }}>
+                {supportPlatform.map(o => (
+                  <li key={o}>
+                    <Icon type={o}></Icon>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

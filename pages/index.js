@@ -112,7 +112,7 @@ const Home = () => {
             <div className="row justify-content-center">
               <div className="col-lg-8">
                 <div className="section-title">
-                  <h2>One Software, Every Solution</h2>
+                  <h2>One Extension, Every Solution</h2>
                   <p>
                     We designed and tested prototypes that helped identify pain points in the
                     account creation process. Together, we shaped the new standard.
@@ -229,7 +229,6 @@ const Home = () => {
                       <a href="#" className="btn btn-outlined--white btn-with-icon btn-height-60">
                         <i className="icon icon-cloud-download-95" /> Download Now
                       </a>
-                      <p className="extra-info-text">No credit card required</p>
                     </div>
                   </div>
                 </div>
