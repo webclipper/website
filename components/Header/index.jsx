@@ -1,4 +1,5 @@
 import React from 'react';
+import { ExtensionUrl, GithubUrl } from '../../common';
 
 export default () => (
   <header className="site-header">
@@ -13,11 +14,8 @@ export default () => (
         </div>
         <div className="col-sm-7 col-lg-3 col-xl-3 offset-xl-1 d-none d-sm-block order-lg-3">
           <div className="header-btns">
-            <div className="btn-1 btn-outlined">
-              <a href="#">Github</a>
-            </div>
             <div className="btn-2">
-              <a href="#">Download trial</a>
+              <a href={ExtensionUrl}>Get Started</a>
             </div>
           </div>
         </div>
@@ -28,13 +26,10 @@ export default () => (
                 <a href="#features">Features</a>
               </li>
               <li className="menu-item">
-                <a href="#">Services</a>
+                <a href={`${GithubUrl}/issues`}>Contact</a>
               </li>
               <li className="menu-item">
-                <a href="#pricing">Pricing</a>
-              </li>
-              <li className="menu-item">
-                <a href="#contact">Contact</a>
+                <a href={GithubUrl}>Source Code</a>
               </li>
             </ul>
           </div>
