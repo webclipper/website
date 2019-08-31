@@ -1,13 +1,13 @@
 import React from 'react';
+import Icon from '../icon';
+import Logo from '../Logo';
 
 export default () => (
   <section className="footer-section">
     <div className="container">
       <div className="row align-items-center text-center">
         <div className="col-lg-2 col-md-3 ">
-          <div className="footer-logo">
-            <img src="/static/image/footer-logo.png" alt="" />
-          </div>
+          <Logo></Logo>
         </div>
         <div className="col-lg-6 col-md-6  offset-lg-1">
           <ul className="nav footer-nav">
@@ -42,18 +42,8 @@ export default () => (
         <div className="col-lg-2 col-md-3 offset-lg-1">
           <ul className="footer-social-list">
             <li>
-              <a href="#">
-                <i className="icon icon-logo-fb-simple" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="icon icon-logo-twitter" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="icon icon-google" />
+              <a href>
+                <Icon type="github"></Icon>
               </a>
             </li>
           </ul>

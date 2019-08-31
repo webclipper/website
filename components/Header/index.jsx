@@ -1,5 +1,6 @@
 import React from 'react';
 import { ExtensionUrl, GithubUrl } from '../../common';
+import Logo from '../Logo';
 
 export default () => (
   <header className="site-header">
@@ -7,9 +8,7 @@ export default () => (
       <div className="row justify-content-center align-items-center position-relative">
         <div className="col-sm-4 col-6 col-lg-2 col-xl-2 order-lg-1">
           <div className="brand">
-            <a href="#">
-              <img src="/static/image/main-logo.png" alt="" />
-            </a>
+            <Logo></Logo>
           </div>
         </div>
         <div className="col-sm-7 col-lg-3 col-xl-3 offset-xl-1 d-none d-sm-block order-lg-3">
