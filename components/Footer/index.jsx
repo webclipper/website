@@ -1,6 +1,7 @@
 import React from 'react';
 import Icon from '../icon';
 import Logo from '../Logo';
+import { GithubUrl, contactUrl } from '../../common';
 
 export default () => (
   <section className="footer-section">
@@ -12,29 +13,18 @@ export default () => (
         <div className="col-lg-6 col-md-6  offset-lg-1">
           <ul className="nav footer-nav">
             <li className="nav-item">
-              <a className="nav-link active" href="#">
-                About{' '}
-              </a>
-            </li>
-            <li className="nav-item">
               <a className="nav-link" href="#">
                 Features
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                {' '}
-                Works
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Career
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href={contactUrl}>
                 Contact
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href={GithubUrl}>
+                Source Code
               </a>
             </li>
           </ul>
