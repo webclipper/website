@@ -42,7 +42,7 @@ export default () => (
         </div>
         <div className="col-lg-12">
           <div className="hero-img">
-            <MacBook img="https://unsplash.it/576/360/?random" scale={1.2} />
+            <MacBook img="/static/image/screenshot.png" scale={1.2} />
           </div>
         </div>
       </div>
