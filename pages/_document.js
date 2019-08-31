@@ -23,6 +23,7 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <script src="//at.alicdn.com/t/font_1373112_esel0k5fpvj.js"></script>
           <script src="/static/plugins/jquery/jquery.min.js"></script>
           <script src="/static/plugins/jquery/jquery-migrate.min.js"></script>
           <script src="/static/plugins/bootstrap-4.3.1/js/bootstrap.bundle.js"></script>
