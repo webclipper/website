@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import HeroArea from '../components/HeroArea';
 import Footer from '../components/Footer';
+import { ExtensionUrl } from '../common';
 
 const Home = () => {
   return (
@@ -226,8 +227,22 @@ const Home = () => {
                       account creation process. Together, we shaped the new standard.
                     </p>
                     <div className="cta-btn">
-                      <a href="#" className="btn btn-outlined--white btn-with-icon btn-height-60">
-                        <i className="icon icon-cloud-download-95" /> Download Now
+                      <a
+                        href={ExtensionUrl}
+                        className="btn btn-outlined--white btn-with-icon btn-height-60"
+                      >
+                        Get Started
+                        <span
+                          style={{
+                            color: '#cdf4ec;',
+                            opacity: 0.8,
+                            marginLeft: 2,
+                            fontWeight: 400,
+                            fontSize: 16,
+                          }}
+                        >
+                          It's free
+                        </span>
                       </a>
                     </div>
                   </div>

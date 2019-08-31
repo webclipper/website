@@ -1,6 +1,7 @@
 import React from 'react';
 import Icon from '../icon';
 import MacBook from '../MacBook';
+import { ExtensionUrl } from '../../common';
 
 const supportPlatform = ['OneNote', 'notion', 'yuque', 'github', 'youdao'];
 
@@ -34,8 +35,8 @@ export default () => (
         </div>
         <div className="col-lg-4 pt-lg-5">
           <div className="hero-btn">
-            <a href="#" className="btn btn--primary btn-height-60">
-              Download free trial
+            <a href={ExtensionUrl} className="btn btn--primary" style={{ width: 180 }}>
+              Get Started
             </a>
           </div>
         </div>
