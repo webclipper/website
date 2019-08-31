@@ -1,5 +1,6 @@
 import React from 'react';
 import Icon from '../icon';
+import MacBook from '../MacBook';
 
 const supportPlatform = ['OneNote', 'notion', 'yuque', 'github', 'youdao'];
 
@@ -40,7 +41,7 @@ export default () => (
         </div>
         <div className="col-lg-12">
           <div className="hero-img">
-            <img src="/static/image/laptop-image.png" alt="" />
+            <MacBook img="https://unsplash.it/576/360/?random" scale={1.2} />
           </div>
         </div>
       </div>
