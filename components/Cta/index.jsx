@@ -22,7 +22,7 @@ export default () => (
                   Get Started
                   <span
                     style={{
-                      color: '#cdf4ec;',
+                      color: '#cdf4ec',
                       opacity: 0.8,
                       marginLeft: 2,
                       fontWeight: 400,

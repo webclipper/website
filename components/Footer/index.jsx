@@ -32,7 +32,7 @@ export default () => (
         <div className="col-lg-2 col-md-3 offset-lg-1">
           <ul className="footer-social-list">
             <li>
-              <a href>
+              <a href={GithubUrl}>
                 <Icon type="github"></Icon>
               </a>
             </li>
