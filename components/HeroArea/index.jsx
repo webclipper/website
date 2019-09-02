@@ -3,7 +3,7 @@ import Icon from '../icon';
 import MacBook from '../MacBook';
 import { ExtensionUrl } from '../../common';
 
-const supportPlatform = ['OneNote', 'notion', 'yuque', 'github', 'youdao'];
+const supportPlatform = ['OneNote', 'notion', 'yuque', 'github', 'youdao', 'bear'];
 
 export default () => (
   <div className="hero-area pt-4 pt-lg-5">
