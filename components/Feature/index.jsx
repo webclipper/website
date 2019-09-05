@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default () => (
+const Feature = () => (
   <section className="feature-section">
     <div className="container">
       <div className="row justify-content-center">
@@ -107,3 +107,5 @@ export default () => (
     </div>
   </section>
 );
+
+export default Feature;
