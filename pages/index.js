@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import HeroArea from '../components/HeroArea';
 import Feature from '../components/Feature';
 import Cta from '../components/Cta';
-import Content from '../components/Content';
+import { ContentArea01, ContentArea02, ContentArea03 } from '../components/Content';
 import Footer from '../components/Footer';
 
 const Home = () => {
@@ -12,7 +12,9 @@ const Home = () => {
       <div className="landing-wrapper">
         <Header></Header>
         <HeroArea></HeroArea>
-        <Content></Content>
+        <ContentArea01 />
+        <ContentArea02 />
+        <ContentArea03 />
         <Feature></Feature>
         <Cta></Cta>
         <Footer></Footer>
