@@ -403,7 +403,6 @@ ul.compatible-list {
     position: relative;
     &:before {
         position: absolute;
-        content: url(../image/rectangle.png);
         left: -16%;
         top: 0;
         animation: rotation 9s infinite linear;
@@ -418,7 +417,6 @@ ul.compatible-list {
     }
     &:after {
         position: absolute;
-        content: url(../image/oval.png);
         right: 0;
         top: 414px;
         animation: rotation 9s infinite linear;
