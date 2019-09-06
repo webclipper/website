@@ -14,8 +14,8 @@ const Home = () => {
         <HeroArea></HeroArea>
         <ContentArea01 />
         <ContentArea02 />
-        <ContentArea03 />
-        <Feature></Feature>
+        {/* <ContentArea03 /> */}
+        {/* <Feature></Feature> */}
         <Cta></Cta>
         <Footer></Footer>
       </div>

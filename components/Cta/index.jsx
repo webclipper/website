@@ -1,5 +1,6 @@
 import React from 'react';
 import { ExtensionUrl } from '../../common';
+import './index.scss';
 
 export default () => (
   <section className="cta-section" style={{ marginTop: 100 }}>
@@ -9,11 +10,8 @@ export default () => (
           <div className="col-xl-7 col-lg-8">
             <div className="cta-content">
               <span className="title-small-text">Ready to take action?</span>
-              <h2>Try our free software!</h2>
-              <p>
-                We designed and tested prototypes that helped identify pain points in the account
-                creation process. Together, we shaped the new standard.
-              </p>
+              <h2>Start save anything</h2>
+              <p></p>
               <div className="cta-btn">
                 <a
                   href={ExtensionUrl}
@@ -21,8 +19,8 @@ export default () => (
                 >
                   Get Started
                   <span
+                    className="catFreeText"
                     style={{
-                      color: '#cdf4ec',
                       opacity: 0.8,
                       marginLeft: 2,
                       fontWeight: 400,
