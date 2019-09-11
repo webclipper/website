@@ -2,6 +2,7 @@ import React from 'react';
 import Icon from '../icon';
 import MacBook from '../MacBook';
 import { ExtensionUrl } from '../../common';
+import trackEvent from '../../common/event';
 
 const supportPlatform = ['OneNote', 'notion', 'yuque', 'github', 'youdao', 'bear'];
 
@@ -35,7 +36,16 @@ export default () => (
         </div>
         <div className="col-lg-4 pt-lg-5">
           <div className="hero-btn">
-            <a href={ExtensionUrl} className="btn btn--primary" style={{ width: 180 }}>
+            <a
+              href={ExtensionUrl}
+              className="btn btn--primary"
+              style={{ width: 180 }}
+              onClick={() => {
+                trackEvent('download', {
+                  page: 'HeroArea',
+                });
+              }}
+            >
               Get Started
             </a>
           </div>

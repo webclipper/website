@@ -2,6 +2,7 @@ import React from 'react';
 import Icon from '../icon';
 import Logo from '../Logo';
 import { GithubUrl, contactUrl } from '../../common';
+import trackEvent from '../../common/event';
 
 export default () => (
   <section className="footer-section">
@@ -32,7 +33,14 @@ export default () => (
         <div className="col-lg-2 col-md-3 offset-lg-1">
           <ul className="footer-social-list">
             <li>
-              <a href={GithubUrl}>
+              <a
+                href={GithubUrl}
+                onClick={() => {
+                  trackEvent('view source code', {
+                    page: 'Footer',
+                  });
+                }}
+              >
                 <Icon type="github"></Icon>
               </a>
             </li>
