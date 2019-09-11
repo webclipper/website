@@ -20,6 +20,6 @@ jobs:
           yarn add now
       - name: Continuous integration
         run: |
-          yarn now --token $ZEIT_TOKEN -A now.json --target production
+          yarn now --token $ZEIT_TOKEN -A now.json --force --prod
         env:
           ZEIT_TOKEN: ${{ secrets.Now }}
