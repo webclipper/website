@@ -1,5 +1,6 @@
 import React from 'react';
 import { ExtensionUrl } from '../../common';
+import trackEvent from '../../common/event';
 import './index.scss';
 
 export default () => (
@@ -16,6 +17,11 @@ export default () => (
                 <a
                   href={ExtensionUrl}
                   className="btn btn-outlined--white btn-with-icon btn-height-60"
+                  onClick={() => {
+                    trackEvent('download', {
+                      page: 'Cta',
+                    });
+                  }}
                 >
                   Get Started
                   <span

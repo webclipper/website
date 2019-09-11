@@ -1,6 +1,7 @@
 import React from 'react';
 import { ExtensionUrl, GithubUrl } from '../../common';
 import Logo from '../Logo';
+import trackEvent from '../../common/event';
 
 export default () => (
   <header className="site-header">
@@ -13,7 +14,14 @@ export default () => (
         </div>
         <div className="col-sm-7 col-lg-3 col-xl-3 offset-xl-1 d-none d-sm-block order-lg-3">
           <div className="header-btns">
-            <div className="btn-2">
+            <div
+              className="btn-2"
+              onClick={() => {
+                trackEvent('download', {
+                  page: 'Header',
+                });
+              }}
+            >
               <a href={ExtensionUrl}>Get Started</a>
             </div>
           </div>
@@ -28,7 +36,16 @@ export default () => (
                 <a href={`${GithubUrl}/issues`}>Contact</a>
               </li>
               <li className="menu-item">
-                <a href={GithubUrl}>Source Code</a>
+                <a
+                  // href={GithubUrl}
+                  onClick={() => {
+                    trackEvent('view source code', {
+                      page: 'Header',
+                    });
+                  }}
+                >
+                  Source Code
+                </a>
               </li>
             </ul>
           </div>
