@@ -37,7 +37,7 @@ export default () => (
               </li>
               <li className="menu-item">
                 <a
-                  // href={GithubUrl}
+                  href={GithubUrl}
                   onClick={() => {
                     trackEvent('view source code', {
                       page: 'Header',
