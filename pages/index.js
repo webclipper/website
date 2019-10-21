@@ -9,13 +9,11 @@ import './index.scss';
 const Home = () => {
   return (
     <React.Fragment>
-      <div className="landing-wrapper">
+      <div className='landing-wrapper'>
         <Header></Header>
         <HeroArea></HeroArea>
         <ContentArea01 />
         <ContentArea02 />
-        {/* <ContentArea03 /> */}
-        {/* <Feature></Feature> */}
         <Cta></Cta>
         <Footer></Footer>
       </div>
