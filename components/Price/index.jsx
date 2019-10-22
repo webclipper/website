@@ -1,39 +1,41 @@
 import React from 'react';
 import './index.scss';
+import { ExtensionUrl } from '../../common';
 
 const data = [
   {
     active: false,
     title: 'Basic',
-    badge: 'Popular',
-    price: '10',
-    description: 'Good for small business',
-    feature: ['Unlimited Blocks', '5GB Clould Storages'],
-    featureNotSupported: ['Custom Domain Names', 'Unlimited Emails'],
+    price: '0',
+    unit: 'month',
+    // description: 'Good for small business',
+    feature: [],
+    featureNotSupported: ['Send Email'],
     button: 'Free',
-    Href: '#'
+    Href: ExtensionUrl
   },
   {
     active: false,
     title: 'Monthly',
-    badge: 'Popular',
-    price: '10',
-    description: 'Good for small business',
-    feature: ['Unlimited Blocks', '5GB Clould Storages'],
-    featureNotSupported: ['Custom Domain Names', 'Unlimited Emails'],
-    button: 'Free',
-    Href: '#'
+    price: '3',
+    unit: 'month',
+    // description: 'Good for small business',
+    feature: ['Send Email'],
+    featureNotSupported: [],
+    button: 'Buy Now',
+    Href: 'https://buy.paddle.com/product/569447'
   },
   {
     active: true,
-    title: 'Basic',
+    title: 'Yearly',
     badge: 'Popular',
-    price: '10',
-    description: 'Good for small business',
-    feature: ['Unlimited Blocks', '5GB Clould Storages'],
-    featureNotSupported: ['Custom Domain Names', 'Unlimited Emails'],
-    button: 'Free',
-    Href: '#'
+    price: '20',
+    unit: 'year',
+    // description: 'Good for small business',
+    feature: ['Send Email'],
+    featureNotSupported: [],
+    button: 'Buy Now',
+    Href: 'https://buy.paddle.com/product/569491'
   }
 ];
 
@@ -65,12 +67,8 @@ export default () => (
                     >
                       {o.price}
                     </span>
-                    <span
-                      className='month'
-                      data-monthly='/month'
-                      data-yearly='/year'
-                    >
-                      /month
+                    <span className='month' data-monthly={`/${o.unit}`}>
+                      /{o.unit}
                     </span>
                   </h2>
                   <p>{o.description}</p>
@@ -95,7 +93,11 @@ export default () => (
                     ))}
                   </ul>
                   <div className='card-btn'>
-                    <a href={o.Href} className='btn btn--primary'>
+                    <a
+                      href={o.Href}
+                      className='btn btn--primary'
+                      target='_blank'
+                    >
                       {o.button}
                     </a>
                   </div>
