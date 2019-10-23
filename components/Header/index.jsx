@@ -30,10 +30,12 @@ export default () => (
           <div className='main-navigation'>
             <ul className='main-menu'>
               <li className='menu-item '>
-                <a href='#features'>Features</a>
+                <a href='/#features'>Features</a>
               </li>
               <li className='menu-item'>
-                <a href={`${GithubUrl}/issues`}>Contact</a>
+                <a href={`${GithubUrl}/issues`} target='_blank'>
+                  Contact
+                </a>
               </li>
               <li className='menu-item'>
                 <a href={`/powerpack`}>Powerpack</a>
@@ -41,6 +43,7 @@ export default () => (
               <li className='menu-item'>
                 <a
                   href={GithubUrl}
+                  target='_blank'
                   onClick={() => {
                     trackEvent('view source code', {
                       page: 'Header'
