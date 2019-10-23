@@ -10,7 +10,7 @@ const data = [
     unit: 'month',
     // description: 'Good for small business',
     feature: [],
-    featureNotSupported: ['Send Email', 'Buy Me A Coffee'],
+    featureNotSupported: ['Buy Me A Coffee', 'Save to Email'],
     button: 'Free',
     Href: ExtensionUrl
   },
@@ -19,8 +19,7 @@ const data = [
     title: 'Monthly',
     price: '3',
     unit: 'month',
-    // description: 'Good for small business',
-    feature: ['Send Email', 'Buy Me A Coffee'],
+    feature: ['Buy Me A Coffee', 'Save to Email'],
     featureNotSupported: [],
     button: 'Buy Now',
     Href: 'https://buy.paddle.com/product/569447'
@@ -31,8 +30,7 @@ const data = [
     badge: 'Popular',
     price: '20',
     unit: 'year',
-    // description: 'Good for small business',
-    feature: ['Send Email', 'Buy Me A Coffee'],
+    feature: ['Buy Me A Coffee', 'Save to Email'],
     featureNotSupported: [],
     button: 'Buy Now',
     Href: 'https://buy.paddle.com/product/569491'
