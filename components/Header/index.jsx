@@ -2,8 +2,16 @@ import React from 'react';
 import { ExtensionUrl, GithubUrl } from '../../common';
 import Logo from '../Logo';
 import trackEvent from '../../common/event';
+import useWindowSize from '../../common/hooks/useWindowSize';
+import Menu, { SubMenu, MenuItem } from 'rc-menu';
+import './index.scss';
+import Icon from '../icon';
+import { useRouter } from 'next/router';
 
 export default () => {
+  const { innerWidth } = useWindowSize();
+  const router = useRouter();
+
   return (
     <header className='site-header'>
       <div className='container'>
@@ -13,51 +21,72 @@ export default () => {
               <Logo></Logo>
             </div>
           </div>
-          <div className='col-sm-7 col-lg-3 col-xl-3 offset-xl-1 d-none d-sm-block order-lg-3'>
-            <div className='header-btns'>
-              <div
-                className='btn-2'
-                onClick={() => {
-                  trackEvent('download', {
-                    page: 'Header'
-                  });
-                }}
+          {innerWidth < 750 && (
+            <Menu mode='horizontal'>
+              <SubMenu
+                title={<Icon type='hamburger' style={{ fontSize: 24 }}></Icon>}
               >
-                <a href={ExtensionUrl}>Get Started</a>
+                <MenuItem
+                  key='powerpack'
+                  onClick={() => router.push('/powerpack')}
+                >
+                  Powerpack
+                </MenuItem>
+                <MenuItem onClick={() => router.push(GithubUrl)}>
+                  Source Code
+                </MenuItem>
+              </SubMenu>
+            </Menu>
+          )}
+          {innerWidth > 750 && (
+            <div className='col-sm-7 col-lg-3 col-xl-3 offset-xl-1 d-none d-sm-block order-lg-3'>
+              <div className='header-btns'>
+                <div
+                  className='btn-2'
+                  onClick={() => {
+                    trackEvent('download', {
+                      page: 'Header'
+                    });
+                  }}
+                >
+                  <a href={ExtensionUrl}>Get Started</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div className='col-sm-1 col-6 col-lg-7 col-xl-6 position-static order-lg-2'>
-            <div className='main-navigation'>
-              <ul className='main-menu'>
-                <li className='menu-item '>
-                  <a href='/#features'>Features</a>
-                </li>
-                <li className='menu-item'>
-                  <a href={`${GithubUrl}/issues`} target='_blank'>
-                    Contact
-                  </a>
-                </li>
-                <li className='menu-item'>
-                  <a href={`/powerpack`}>Powerpack</a>
-                </li>
-                <li className='menu-item'>
-                  <a
-                    href={GithubUrl}
-                    target='_blank'
-                    onClick={() => {
-                      trackEvent('view source code', {
-                        page: 'Header'
-                      });
-                    }}
-                  >
-                    Source Code
-                  </a>
-                </li>
-              </ul>
+          )}
+          {innerWidth > 750 && (
+            <div className='col-sm-1 col-6 col-lg-7 col-xl-6 position-static order-lg-2'>
+              <div className='main-navigation'>
+                <ul className='main-menu'>
+                  <li className='menu-item '>
+                    <a href='/#features'>Features</a>
+                  </li>
+                  <li className='menu-item'>
+                    <a href={`${GithubUrl}/issues`} target='_blank'>
+                      Contact
+                    </a>
+                  </li>
+                  <li className='menu-item'>
+                    <a href={`/powerpack`}>Powerpack</a>
+                  </li>
+                  <li className='menu-item'>
+                    <a
+                      href={GithubUrl}
+                      target='_blank'
+                      onClick={() => {
+                        trackEvent('view source code', {
+                          page: 'Header'
+                        });
+                      }}
+                    >
+                      Source Code
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className='mobile-menu' />
             </div>
-            <div className='mobile-menu' />
-          </div>
+          )}
         </div>
       </div>
     </header>
