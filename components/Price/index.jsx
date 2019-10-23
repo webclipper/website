@@ -10,7 +10,7 @@ const data = [
     unit: 'month',
     // description: 'Good for small business',
     feature: [],
-    featureNotSupported: ['Send Email'],
+    featureNotSupported: ['Send Email', 'Buy Me A Coffee'],
     button: 'Free',
     Href: ExtensionUrl
   },
@@ -20,7 +20,7 @@ const data = [
     price: '3',
     unit: 'month',
     // description: 'Good for small business',
-    feature: ['Send Email'],
+    feature: ['Send Email', 'Buy Me A Coffee'],
     featureNotSupported: [],
     button: 'Buy Now',
     Href: 'https://buy.paddle.com/product/569447'
@@ -32,7 +32,7 @@ const data = [
     price: '20',
     unit: 'year',
     // description: 'Good for small business',
-    feature: ['Send Email'],
+    feature: ['Send Email', 'Buy Me A Coffee'],
     featureNotSupported: [],
     button: 'Buy Now',
     Href: 'https://buy.paddle.com/product/569491'
