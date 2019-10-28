@@ -23,7 +23,7 @@ const data = [
     feature: ['Buy Me A Coffee', 'Save to Email'],
     featureNotSupported: [],
     button: 'Buy Now',
-    Href: 'https://buy.paddle.com/product/569447'
+    Href: 'https://pay.paddle.com/product/569447'
   },
   {
     active: true,
@@ -34,7 +34,7 @@ const data = [
     feature: ['Buy Me A Coffee', 'Save to Email'],
     featureNotSupported: [],
     button: 'Buy Now',
-    Href: 'https://buy.paddle.com/product/569491'
+    Href: 'https://pay.paddle.com/product/569491'
   }
 ];
 
