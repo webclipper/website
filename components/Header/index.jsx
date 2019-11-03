@@ -26,12 +26,12 @@ export default () => {
               <SubMenu
                 title={<Icon type='hamburger' style={{ fontSize: 24 }}></Icon>}
               >
-                {/* <MenuItem
+                <MenuItem
                   key='powerpack'
                   onClick={() => router.push('/powerpack')}
                 >
                   Powerpack
-                </MenuItem> */}
+                </MenuItem>
                 <MenuItem onClick={() => router.push(GithubUrl)}>
                   Source Code
                 </MenuItem>
@@ -66,9 +66,9 @@ export default () => {
                       Contact
                     </a>
                   </li>
-                  {/* <li className='menu-item'>
+                  <li className='menu-item'>
                     <a href={`/powerpack`}>Powerpack</a>
-                  </li> */}
+                  </li>
                   <li className='menu-item'>
                     <a
                       href={GithubUrl}
