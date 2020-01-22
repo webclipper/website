@@ -1,7 +1,5 @@
 import React from 'react';
 
-const supportPlatform = ['OneNote', 'notion', 'yuque', 'github', 'youdao', 'bear'];
-
 export const ContentArea01 = () => (
   <section className="content-section-01">
     <div className="container">
@@ -34,10 +32,7 @@ export const ContentArea02 = () => (
         <div className="col-xl-5 col-sm-12 col-md-6 order-md-1">
           <div className="content-text content-left-content">
             <h2>Remove the clutter</h2>
-            <p>
-              Reduce the clutter and clip only the article, recipe, or product information you
-              really need.
-            </p>
+            <p>Reduce the clutter and clip only the article, recipe, or product information you really need.</p>
           </div>
         </div>
       </div>
@@ -57,10 +52,7 @@ export const ContentArea03 = () => (
         <div className="col-xl-6 col-md-6 offset-xl-1 col-sm-12">
           <div className="content-right-content">
             <h2>Never miss a thing</h2>
-            <p>
-              Event is not like most tech conferences. We want our presentations to engage the
-              audience, spark discussion and inspire new ideas.
-            </p>
+            <p>Event is not like most tech conferences. We want our presentations to engage the audience, spark discussion and inspire new ideas.</p>
             <ul className="content-list">
               <li>
                 <span>
