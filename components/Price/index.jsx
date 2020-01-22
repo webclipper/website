@@ -3,6 +3,8 @@ import './index.scss';
 import { ExtensionUrl } from '../../common';
 import { withRouter } from 'next/router';
 
+const feature = ['Buy Me A Coffee', 'Save to Email', 'Send to Kindle', 'OCR'];
+
 const data = [
   {
     active: false,
@@ -11,7 +13,7 @@ const data = [
     unit: 'month',
     // description: 'Good for small business',
     feature: [],
-    featureNotSupported: ['Buy Me A Coffee', 'Save to Email'],
+    featureNotSupported: feature,
     button: 'Free',
     Href: ExtensionUrl,
   },
@@ -20,7 +22,7 @@ const data = [
     title: 'Monthly',
     price: '3',
     unit: 'month',
-    feature: ['Buy Me A Coffee', 'Save to Email'],
+    feature: feature,
     featureNotSupported: [],
     button: 'Buy Now',
     Href: 'https://pay.paddle.com/checkout/569447',
@@ -31,7 +33,7 @@ const data = [
     badge: 'Popular',
     price: '20',
     unit: 'year',
-    feature: ['Buy Me A Coffee', 'Save to Email'],
+    feature: feature,
     featureNotSupported: [],
     button: 'Buy Now',
     Href: 'https://pay.paddle.com/checkout/569491',
