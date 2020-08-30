@@ -4,7 +4,7 @@ import MacBook from '../MacBook';
 import { ExtensionUrl } from '../../common';
 import trackEvent from '../../common/event';
 
-const supportPlatform = ['joplin', 'notion', 'OneNote', 'yuque', 'github', 'youdao', 'bear', 'kindle', 'mail', 'ulysses'];
+const supportPlatform = ['joplin', 'notion', 'OneNote', 'yuque', 'github', 'youdao', 'bear', 'kindle', 'mail', 'ulysses', 'baklib', 'wolai'];
 
 export default () => (
   <div className="hero-area pt-4 pt-lg-5">
@@ -22,7 +22,7 @@ export default () => (
             <div className="compatible">
               <span>Support :</span>
               <ul className="compatible-list" style={{ fontSize: 32 }}>
-                {supportPlatform.map(o => (
+                {supportPlatform.map((o) => (
                   <li key={o}>
                     <Icon type={o}></Icon>
                   </li>
