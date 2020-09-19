@@ -1,5 +1,5 @@
 {
-  "name": "create-next-example-app",
+  "name": "webclipper-website",
   "scripts": {
     "start": "next",
     "build": "next build"
