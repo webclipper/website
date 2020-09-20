@@ -9,7 +9,7 @@ import './index.scss';
 const Home = () => {
   return (
     <React.Fragment>
-      <div className='landing-wrapper'>
+      <div className="landing-wrapper">
         <Header></Header>
         <HeroArea></HeroArea>
         <ContentArea01 />
@@ -20,5 +20,9 @@ const Home = () => {
     </React.Fragment>
   );
 };
+
+Home.getInitialProps = async () => ({
+  namespacesRequired: ['common'],
+});
 
 export default Home;

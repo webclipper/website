@@ -4,8 +4,9 @@ import Logo from '../Logo';
 import { GithubUrl, contactUrl } from '../../common';
 import trackEvent from '../../common/event';
 import { i18n } from '../../i18n';
+import { withTranslation } from '../../i18n';
 
-export default () => (
+export default withTranslation('common')(({ t }) => (
   <section className="footer-section">
     <div className="container">
       <div className="row align-items-center text-center">
@@ -26,7 +27,7 @@ export default () => (
             </li>
             <li className="nav-item">
               <a className="nav-link" href={GithubUrl}>
-                Source Code
+                {t('sourcecode')}
               </a>
             </li>
           </ul>
@@ -49,8 +50,8 @@ export default () => (
         </div>
       </div>
       <div className="copyright">
-        <p onClick={() => i18n.changeLanguage(i18n.language === 'zh' ? 'en' : 'zh')}>©2020 All right reserved. </p>
+        <p onClick={() => i18n.changeLanguage(i18n.language === 'cn' ? 'en' : 'cn')}>©2020 All right reserved. </p>
       </div>
     </div>
   </section>
-);
+));
