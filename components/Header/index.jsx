@@ -7,45 +7,39 @@ import Menu, { SubMenu, MenuItem } from 'rc-menu';
 import './index.scss';
 import Icon from '../icon';
 import { useRouter } from 'next/router';
+import { withTranslation } from '../../i18n';
 
-export default () => {
+const Header = ({ t }) => {
   const { innerWidth } = useWindowSize();
   const router = useRouter();
 
   return (
-    <header className='site-header'>
-      <div className='container'>
-        <div className='row justify-content-center align-items-center position-relative'>
-          <div className='col-sm-4 col-6 col-lg-2 col-xl-2 order-lg-1'>
-            <div className='brand'>
+    <header className="site-header">
+      <div className="container">
+        <div className="row justify-content-center align-items-center position-relative">
+          <div className="col-sm-4 col-6 col-lg-2 col-xl-2 order-lg-1">
+            <div className="brand">
               <Logo></Logo>
             </div>
           </div>
           {innerWidth < 750 && (
-            <Menu mode='horizontal'>
-              <SubMenu
-                title={<Icon type='hamburger' style={{ fontSize: 24 }}></Icon>}
-              >
-                <MenuItem
-                  key='powerpack'
-                  onClick={() => router.push('/powerpack')}
-                >
-                  Powerpack
+            <Menu mode="horizontal">
+              <SubMenu title={<Icon type="hamburger" style={{ fontSize: 24 }}></Icon>}>
+                <MenuItem key="powerpack" onClick={() => router.push('/powerpack')}>
+                  {t('powerpack')}
                 </MenuItem>
-                <MenuItem onClick={() => router.push(GithubUrl)}>
-                  Source Code
-                </MenuItem>
+                <MenuItem onClick={() => router.push(GithubUrl)}>Source Code</MenuItem>
               </SubMenu>
             </Menu>
           )}
           {innerWidth > 750 && (
-            <div className='col-sm-7 col-lg-3 col-xl-3 offset-xl-1 d-none d-sm-block order-lg-3'>
-              <div className='header-btns'>
+            <div className="col-sm-7 col-lg-3 col-xl-3 offset-xl-1 d-none d-sm-block order-lg-3">
+              <div className="header-btns">
                 <div
-                  className='btn-2'
+                  className="btn-2"
                   onClick={() => {
                     trackEvent('download', {
-                      page: 'Header'
+                      page: 'Header',
                     });
                   }}
                 >
@@ -55,27 +49,27 @@ export default () => {
             </div>
           )}
           {innerWidth > 750 && (
-            <div className='col-sm-1 col-6 col-lg-7 col-xl-6 position-static order-lg-2'>
-              <div className='main-navigation'>
-                <ul className='main-menu'>
-                  <li className='menu-item '>
-                    <a href='/#features'>Features</a>
+            <div className="col-sm-1 col-6 col-lg-7 col-xl-6 position-static order-lg-2">
+              <div className="main-navigation">
+                <ul className="main-menu">
+                  <li className="menu-item ">
+                    <a href="/#features">Features</a>
                   </li>
-                  <li className='menu-item'>
-                    <a href={`${GithubUrl}/issues`} target='_blank'>
+                  <li className="menu-item">
+                    <a href={`${GithubUrl}/issues`} target="_blank">
                       Contact
                     </a>
                   </li>
-                  <li className='menu-item'>
-                    <a href={`/powerpack`}>Powerpack</a>
+                  <li className="menu-item">
+                    <a href={`/powerpack`}> {t('powerpack')}</a>
                   </li>
-                  <li className='menu-item'>
+                  <li className="menu-item">
                     <a
                       href={GithubUrl}
-                      target='_blank'
+                      target="_blank"
                       onClick={() => {
                         trackEvent('view source code', {
-                          page: 'Header'
+                          page: 'Header',
                         });
                       }}
                     >
@@ -84,7 +78,7 @@ export default () => {
                   </li>
                 </ul>
               </div>
-              <div className='mobile-menu' />
+              <div className="mobile-menu" />
             </div>
           )}
         </div>
@@ -92,3 +86,5 @@ export default () => {
     </header>
   );
 };
+
+export default withTranslation('common')(Header);

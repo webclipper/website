@@ -3,6 +3,7 @@ import Icon from '../icon';
 import Logo from '../Logo';
 import { GithubUrl, contactUrl } from '../../common';
 import trackEvent from '../../common/event';
+import { i18n } from '../../i18n';
 
 export default () => (
   <section className="footer-section">
@@ -48,7 +49,7 @@ export default () => (
         </div>
       </div>
       <div className="copyright">
-        <p>©2019 All right reserved. </p>
+        <p onClick={() => i18n.changeLanguage(i18n.language === 'zh' ? 'en' : 'zh')}>©2020 All right reserved. </p>
       </div>
     </div>
   </section>
