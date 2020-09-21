@@ -7,7 +7,7 @@ import Menu, { SubMenu, MenuItem } from 'rc-menu';
 import './index.scss';
 import Icon from '../icon';
 import { useRouter } from 'next/router';
-import { withTranslation } from '../../i18n';
+import { withTranslation, Link } from '../../i18n';
 
 const Header = ({ t }) => {
   const { innerWidth } = useWindowSize();
@@ -53,7 +53,7 @@ const Header = ({ t }) => {
               <div className="main-navigation">
                 <ul className="main-menu">
                   <li className="menu-item ">
-                    <a href="/#features">Features</a>
+                    <a href="/#features">{t('features')}</a>
                   </li>
                   <li className="menu-item">
                     <a href={`${GithubUrl}/issues`} target="_blank">
@@ -61,7 +61,7 @@ const Header = ({ t }) => {
                     </a>
                   </li>
                   <li className="menu-item">
-                    <a href={`/powerpack`}> {t('powerpack')}</a>
+                    <Link href="/powerpack">{t('powerpack')}</Link>
                   </li>
                   <li className="menu-item">
                     <a
@@ -73,7 +73,7 @@ const Header = ({ t }) => {
                         });
                       }}
                     >
-                      Source Code
+                      {t('sourcecode')}
                     </a>
                   </li>
                 </ul>

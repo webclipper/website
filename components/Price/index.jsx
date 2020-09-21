@@ -2,6 +2,7 @@ import React from 'react';
 import './index.scss';
 import { ExtensionUrl } from '../../common';
 import { withRouter } from 'next/router';
+import { withTranslation } from '../../i18n';
 
 const feature = ['Buy Me A Coffee', 'Save to Email', 'Send to Kindle', 'OCR'];
 
@@ -11,7 +12,6 @@ const data = [
     title: 'Basic',
     price: '0',
     unit: 'month',
-    // description: 'Good for small business',
     feature: [],
     featureNotSupported: feature,
     button: 'Free',
@@ -40,7 +40,7 @@ const data = [
   },
 ];
 
-const Price = props => {
+const Price = (props) => {
   return (
     <section className="pricing-section">
       <div className="container">
@@ -54,7 +54,7 @@ const Price = props => {
         </div>
         <div className="custom-tab-wrapper monthly" id="pricing-tab-7">
           <div className="row mb-d-30">
-            {data.map(o => (
+            {data.map((o) => (
               <div className="col-lg-4">
                 <div className={`pricing-card ${o.active ? 'active' : ''}`}>
                   <div className="card-head">
@@ -73,7 +73,7 @@ const Price = props => {
                   </div>
                   <div className="card-content">
                     <ul className="pricing-list">
-                      {o.feature.map(fe => (
+                      {o.feature.map((fe) => (
                         <li>
                           <span>
                             <i className="icon icon-check-2" />
@@ -81,7 +81,7 @@ const Price = props => {
                           {fe}
                         </li>
                       ))}
-                      {o.featureNotSupported.map(fe => (
+                      {o.featureNotSupported.map((fe) => (
                         <li className="disable-opt">
                           <span>
                             <i className="icon icon-check-2" />
@@ -110,4 +110,4 @@ const Price = props => {
   );
 };
 
-export default withRouter(Price);
+export default withTranslation('common')(withRouter(Price));
