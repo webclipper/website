@@ -43,7 +43,7 @@ const Header = ({ t }) => {
                     });
                   }}
                 >
-                  <a href={ExtensionUrl}>Get Started</a>
+                  <a href={ExtensionUrl}>{t('components-header-started')}</a>
                 </div>
               </div>
             </div>
