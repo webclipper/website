@@ -25,7 +25,7 @@ const data = [
     feature: feature,
     featureNotSupported: [],
     button: 'Buy Now',
-    Href: 'https://pay.paddle.com/checkout/569447',
+    product: 569447,
   },
   {
     active: true,
@@ -36,7 +36,7 @@ const data = [
     feature: feature,
     featureNotSupported: [],
     button: 'Buy Now',
-    Href: 'https://pay.paddle.com/checkout/569491',
+    product: 569491,
   },
 ];
 
@@ -92,7 +92,16 @@ const Price = (props) => {
                     </ul>
                     <div className="card-btn">
                       <a
-                        href={props.router.query.guest_email ? `${o.Href}?guest_email=${props.router.query.guest_email}` : o.Href}
+                        onClick={() => {
+                          if (o.Href) {
+                            window.open(o.Href)
+                            return
+                          }
+                          Paddle.Checkout.open({
+                            product: o.product,
+                            email: props.router.query.guest_email
+                          });
+                        }}
                         className="btn btn--primary"
                         target="_blank"
                       >
