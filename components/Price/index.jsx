@@ -10,7 +10,7 @@ const Price = (props) => {
   return (
     <div style={{ height: '500px', alignItems: 'center', justifyContent: 'center', display: 'flex' }}>
       <div>
-        <h1>{props.t('powerpack-not-available')}</h1>
+        <h3>{props.t('powerpack-not-available')}</h3>
       </div>
     </div>
   );
